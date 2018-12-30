@@ -6,4 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  page = 'Recipes';
+
+  changePage(linkName: string) {
+    this.page = linkName;
+  }
 }
