@@ -6,6 +6,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
 import { RecipePlaceholderComponent } from './recipes/recipe-list/recipe-placeholder/recipe-placeholder.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 
 // remember: route order is very important!
 const routes: Routes = [
@@ -16,7 +17,7 @@ const routes: Routes = [
     { path: ':id', component: RecipeDetailsComponent },
     { path: ':id/edit', component: RecipeEditComponent },
   ] },
-  { path: 'shoppingList', component: ShoppingEditComponent },
+  { path: 'shoppingList', component: ShoppingListComponent },
 ];
 
 @NgModule({

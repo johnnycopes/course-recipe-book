@@ -21,13 +21,12 @@ export class RecipeDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.route.paramMap
-      .subscribe(
-        (paramMap: ParamMap) => {
-          this.id = Number(paramMap.get('id'));
-          this.recipe = this.recipeService.getRecipe(this.id);
-        }
-      );
+    this.route.paramMap.subscribe(
+      (paramMap: ParamMap) => {
+        this.id = Number(paramMap.get('id'));
+        this.recipe = this.recipeService.getRecipe(this.id);
+      }
+    );
   }
 
   onAddToShoppingList() {
